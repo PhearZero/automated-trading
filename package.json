@@ -13,7 +13,7 @@
   },
   "scripts": {
     "login": "firebase login",
-    "clean": "rm -Rf node_modules package-lock.json cd ./firebase/functions && rm -Rf node_modules package-lock.json && cd ../..",
+    "clean": "rm -Rf node_modules package-lock.json && cd ./firebase/functions && rm -Rf node_modules package-lock.json && cd ../..",
     "setup": "npm run clean && npm install && cd ./firebase/functions && npm install && cd ../..",
     "deploy": "cd ./firebase/ && firebase deploy --only functions && cd ../"
   }
